@@ -30,6 +30,7 @@ A CNN using the **MNIST dataset** to identify the number from its image with an 
 * **plot.py** - used to plot the training and validation loss graph
 * **mnist_cnn_model.h5** - the CNN model
 * **model_history.pkl** - stores model training history for plotting graph
+* **test.png** - sample testing file
 
 
 ##
