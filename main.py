@@ -24,12 +24,23 @@ train_images, val_images, train_labels, val_labels = train_test_split(
 model = models.Sequential(
     [
         layers.Conv2D(32, (3, 3), activation="relu", input_shape=(28, 28, 1)),
+        layers.BatchNormalization(),
         layers.MaxPooling2D((2, 2)),
+        layers.Dropout(0.25),
+
         layers.Conv2D(64, (3, 3), activation="relu"),
+        layers.BatchNormalization(),
         layers.MaxPooling2D((2, 2)),
+        layers.Dropout(0.25),
+
         layers.Conv2D(64, (3, 3), activation="relu"),
+        layers.BatchNormalization(),
         layers.Flatten(),
+        
         layers.Dense(64, activation="relu"),
+        layers.BatchNormalization(),
+        layers.Dropout(0.5),
+
         layers.Dense(10, activation="softmax"),
     ]
 )

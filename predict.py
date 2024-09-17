@@ -6,7 +6,7 @@ from PIL import Image
 import numpy as np
 
 # Load the image
-image_path = "test.png"
+image_path = "test.png" # IMPORTANT: Change this to the new file name to predict the number
 image = Image.open(image_path).convert("L")  # Converts image to grayscale
 
 # Resize the image to 28x28 pixels and convert to numpy array

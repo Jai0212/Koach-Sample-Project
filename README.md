@@ -1,16 +1,15 @@
 # Koach Sample Project
 
-A CNN using the **MNIST dataset** to identify the number from its image with an accuracy of **99.16%**, created in Python using TensorFlow.
+A CNN using the **MNIST dataset** to identify the number from its image with an accuracy of **99.18%**, created in Python using TensorFlow.
 
 
 ## Model Architecture
-* Input Convolutional Layer
-* Pooling Layer
 * Convolutional Layer
 * Pooling Layer
+* Batch Normalization
+* Dropout Layer
 * Flattening Layer
-* Dense Layer to combine everything
-* Output Dense Layer
+* Dense Layer
 
 ### Adam Optimizer:
 * Learning Rate: 0.001
@@ -50,4 +49,4 @@ This layer is used to normalize the input ensuring stability and prevents overfi
 This layer randomly drops out some neurons to prevent overfitting and helps in generalization.
 
 ### Use of these Layers
-I have not used these layers in this project as it is a simple project with a simple dataset so it's not that useful. It was only slightly be beneficial. For more complex models, these layers will be helpful. 
+I have used these layers in this project to improve the model as it prevents overfitting and helps in generaliztion thereby improving accuracy. Since it is a simple project with a simple dataset it's not super useful. It was only slightly be beneficial. For more complex models, these layers will be of great use.
